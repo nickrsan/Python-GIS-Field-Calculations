@@ -1,5 +1,12 @@
 # Python for Field Calculations
 
+## Data Downloads
+You can download this whole repository from the [Releases](https://github.com/nickrsan/Python-GIS-Field-Calculations/releases) tab, but it won't include the true data. For that, you'll need to download the following:
+
+* ArcGIS (10.x): https://github.com/nickrsan/Python-GIS-Field-Calculations/raw/master/arcgis/field_calculator_2019.mpk (open this wherever you like)
+* QGIS (3.x): https://github.com/nickrsan/Python-GIS-Field-Calculations/raw/master/qgis/field_calculator.gpkg (put this in the QGIS subfolder of the downloaded repository). The `.qgz` map file is from QGIS 3.4, but the data will work in any QGIS version that supports GeoPackages.
+
+
 ## Getting to know everyone
 1. Introduce self, experience, etc
 2. See who is using QGIS and ArcGIS
@@ -31,7 +38,7 @@
 	- Use this to show basics without a function, then incorporate it into a function - we'll then use it to assign many features
 		later to demonstrate how GIS will run code for any number of features
 		
-	```
+	```python
 		>>> import random
 		>>> random.seed(20190212)
 		>>> random.random()
@@ -50,7 +57,7 @@
 	```
 	
 	Then make it into a function:
-	```
+	```python
 		>>> def get_cohort():
 		...     if random.random() < 0.5:
 		...         return 1
